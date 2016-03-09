@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         gcc \
         curl \
         make \
+        patch \
         libc6-dev \
         libssl-dev \
         libreadline-dev
