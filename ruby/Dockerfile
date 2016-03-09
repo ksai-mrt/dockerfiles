@@ -5,12 +5,14 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
         autoconf \
         gcc \
+        g++ \
         curl \
         make \
         patch \
         libc6-dev \
         libssl-dev \
-        libreadline-dev
+        libreadline-dev \
+        libpq-dev
 
 # skip installing gem documentation
 RUN mkdir -p /usr/local/etc \
